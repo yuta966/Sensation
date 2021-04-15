@@ -80,7 +80,7 @@ $(document).ready(function(){
             $('.grade-modal').removeClass('close');
 
             //subject iconを閉じる
-            $('.subject-modal').find('icon').each(function(){
+            $('.subject-modal').find('.icon').each(function(){
                 $(this).addClass('close');
             });
         }
