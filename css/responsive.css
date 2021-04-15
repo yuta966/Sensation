@@ -1,0 +1,13 @@
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 600px) {
+    .header-menu .header-right {
+        display: none;
+    }
+
+    .header-menu .hamburger {
+        display: block;
+    }
+}

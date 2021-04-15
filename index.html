@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensation</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="top-content">
+            <div class="container">
+                <a href="index.html"><h1>Sensation</h1></a>
+                <input type="text">
+                <p class="goButton btn">Go</p>
+            </div>
+        </div>
+        <div class="innner">
+            <!-- 学年選択 -->
+            <div class="modal grade-modal open">
+                <div class="container">
+                    <h2>学年を選択してください</h2>
+                    <img class="icon" id="小学1年生" src="img/国語.png" alt="">
+                    <img class="icon" id="小学2年生" src="img/国語.png" alt="">
+                    <img class="icon" id="小学3年生" src="img/国語.png" alt="">
+                    <img class="icon" id="小学4年生" src="img/国語.png" alt="">
+                    <img class="icon" id="小学5年生" src="img/国語.png" alt="">
+                    <img class="icon" id="小学6年生" src="img/国語.png" alt="">
+                    <img class="icon" id="中学1年生" src="img/国語.png" alt="">
+                    <img class="icon" id="中学2年生" src="img/国語.png" alt="">
+                    <img class="icon" id="中学3年生" src="img/国語.png" alt="">
+                    <img class="icon" id="高校生" src="img/国語.png" alt="">
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- 教科選択 -->
+            <div class="modal subject-modal close">
+                <div class="container">
+                    <h2>教科を選択してください</h2>
+                    <img class="icon close" id="国語" src="img/国語.png" alt="">
+                    <img class="icon close" id="社会" src="img/社会.png" alt="">
+                    <img class="icon close" id="算数" src="img/算数.png" alt="">
+                    <img class="icon close" id="数学" src="img/数学.png" alt="">
+                    <img class="icon close" id="理科" src="img/理科.png" alt="">
+                    <img class="icon close" id="音楽" src="img/音楽.png" alt="">
+                    <img class="icon close" id="美術" src="img/美術.png" alt="">
+                    <img class="icon close" id="図工" src="img/図工.png" alt="">
+                    <img class="icon close" id="保健" src="img/保健.png" alt="">
+                    <img class="icon close" id="体育" src="img/体育.png" alt="">
+                    <img class="icon close" id="技術" src="img/技術.png" alt="">
+                    <img class="icon close" id="家庭" src="img/家庭.png" alt="">
+                    <img class="icon close" id="生活" src="img/生活.png" alt="">
+                    <img class="icon close" id="英語" src="img/英語.png" alt="">
+                    <img class="icon close" id="道徳" src="img/道徳.png" alt="">
+                    <img class="icon close" id="特活" src="img/特活.png" alt="">
+                    <img class="icon close" id="総合" src="img/総合.png" alt="">
+                    <div class="clear"></div>
+                    <p class="prevButton btn">Back</p>
+                </div>
+            </div>
+            <!-- ジャンル選択 -->
+            <template id="template">
+                <div class="icon content-icon">
+                    <p class="icon-text"></p>
+                </div>
+            </template>
+            <div class="modal content-modal close">
+                <div class="container">
+                    <h2>ジャンルを選択してください</h2>
+                    <div id="icons"></div>
+                    <p class="prevButton btn">Back</p>
+                    <p class="goButton btn">Go</p>
+                </div>
+            </div>
+        <div>
+        <form action="">
+            <input type="hidden" name="grade" id="grade">
+            <input type="hidden" name="subject" id="subject">
+            <input type="hidden" name="content" id="content">
+            <input type="hidden" name="content" id="keyword">
+        </form>
+        </div>
+    </main>
+<footer>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="script.js"></script>
+</body>
+</html>
