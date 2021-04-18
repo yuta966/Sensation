@@ -545,12 +545,12 @@ function contentData(grade, subject) {
                     ];
                     break;
                 case "図工":
-                return [
-                    "造形遊びをする活動",
-                    "絵や立体、工作に表す活動",
-                    "鑑賞する活動"
-                ];
-                break;
+                    return [
+                        "造形遊びをする活動",
+                        "絵や立体、工作に表す活動",
+                        "鑑賞する活動"
+                    ];
+                    break;
                 case "体育":
                     return [
                         "体つくり運動",
@@ -975,9 +975,8 @@ function contentData(grade, subject) {
             break;
         case "高校生":
             switch(subject) {
-                case "国語":
+                case "古文":
                     return [
-                        //古文
                         "歴史的かな遣い",
                         "古語",
                         "現代語訳",
@@ -987,60 +986,76 @@ function contentData(grade, subject) {
                         "格助詞",
                         "助動詞",
                         "敬語",
-                        "読解",
-                        //漢文
+                        "読解"
+                    ];
+                    break;
+                case "漢文":
+                    return [
                         "訓読・書き下し",
                         "再読文字",
                         "否定形",
                         "句法",
                         "疑問形・反語形",
                         "過去形・敬語",
-                        "読解",
-                        //現代文
+                        "読解"
+                    ]
+                    break;
+                case "現代文":
+                    return [
                         "小説の読み方",
                         "漢字の勉強方法",
                         "現代文の読み方",
                         "記述問題の解答方法",
                         "評論の読み方",
                         "選択式問題での取捨選択方法"
-                    ];
+                    ]
                     break;
-                case "数学":
+                case "数学１":
                     return [
-                        //数I
                         "数と式",
                         "２次関数",
                         "図形と計量",
                         "形について",
-                        "データの分析",
-                        //数A
+                        "データの分析"
+                    ];
+                    break;
+                case "数学A":
+                    return [
                         "場合の数と確率",
                         "整数の性質",
-                        "図形の性質",
-                        //数II
+                        "図形の性質"
+                    ]
+                    break;
+                case "数学２":
+                    return [
                         "式と証明",
                         "複素数と方程式",
                         "図形と方程式",
                         "三角関数",
                         "指数・対数関数",
                         "微分法",
-                        "積分法",
-                        //数B
+                        "積分法"
+                    ]
+                    break;
+                case "数学B":
+                    return [
                         "平面ベクトル",
                         "空間ベクトル",
                         "数列",
-                        "確率分布",
-                        //数III
+                        "確率分布"
+                    ]
+                    break;
+                case "数学３":
+                    return [
                         "平面上の曲線",
                         "複素数平面",
                         "関数と極限",
                         "微分法(III)",
                         "積分法(III)"
-                    ];
+                    ]
                     break;
-                case "理科":
+                case "物理基礎":
                     return [
-                        //物理基礎
                         "速度・加速度",
                         "落体の運動",
                         "力の表し方・運動の法則",
@@ -1050,8 +1065,11 @@ function contentData(grade, subject) {
                         "熱とエネルギー",
                         "波の性質",
                         "音波",
-                        "電気・エネルギーとその利用",
-                        //物理
+                        "電気・エネルギーとその利用"
+                    ];
+                    break;
+                case "物理":
+                    return [
                         "平面内の運動と剛体にはたらく力",
                         "運動量",
                         "円運動・慣性力",
@@ -1064,8 +1082,11 @@ function contentData(grade, subject) {
                         "電流",
                         "電流と磁場",
                         "電磁誘導・交流と電磁波",
-                        "原子",
-                        //化学基礎
+                        "原子"
+                    ]
+                    break;
+                case "化学基礎":
+                    return [
                         "物質の探究",
                         "物質の構成粒子",
                         "化学結合",
@@ -1075,8 +1096,11 @@ function contentData(grade, subject) {
                         "酸と塩基",
                         "中和反応と塩",
                         "酸化還元反応",
-                        "電池と電気分解",
-                        //化学
+                        "電池と電気分解"
+                    ]
+                    break;
+                case "化学":
+                    return [
                         "固体の構造と状態変化",
                         "気体の性質",
                         "溶液の性質",
@@ -1091,8 +1115,11 @@ function contentData(grade, subject) {
                         "脂肪族化合物の性質",
                         "芳香族化合物の性質",
                         "合成高分子化合物",
-                        "天然高分子化合物",
-                        //生物基礎
+                        "天然高分子化合物"
+                    ]
+                    break;
+                case "生物基礎":
+                    return [
                         "生物の多様性と共通性",
                         "細胞とエネルギー",
                         "DNAと遺伝情報",
@@ -1101,8 +1128,11 @@ function contentData(grade, subject) {
                         "免疫",
                         "植生と遷移・生物と光",
                         "気候とバイオーム",
-                        "生態系",
-                        //生物
+                        "生態系"
+                    ]
+                    break;
+                case "生物":
+                    return [
                         "生体物質と細胞",
                         "生命現象とタンパク質",
                         "代謝",
@@ -1116,7 +1146,10 @@ function contentData(grade, subject) {
                         "生物群集と生態系",
                         "生物の変遷・進化",
                         "生物の系統",
-                        //地学基礎
+                    ]
+                    break;
+                case "地学基礎":
+                    return [
                         "地球の概観と構造",
                         "活動する地球",
                         "地球を構成する岩石",
@@ -1126,18 +1159,18 @@ function contentData(grade, subject) {
                         "大気・海水の運動",
                         "天気/災害・環境",
                         "太陽と恒星",
-                        "太陽の進化と宇宙の姿",
-                        //科学と人間生活
+                        "太陽の進化と宇宙の姿"
+                    ]
+                    break;
+                case "科学と人間生活":
+                    return [
                         "動物の反応と行動・生物と光",
                         "植物の環境応答・生物と光",
                         "植生と遷移・生物と光"
-                    ];
+                    ]
                     break;
-                case "社会":
+                case "世界史":
                     return [
-                        //高校社会科目
-                        //【地理・歴史】
-                        //世界史
                         "先史・古代オリエント・古代地中海世界",
                         "ローマ世界とキリスト教",
                         "古代のアジア",
@@ -1163,8 +1196,11 @@ function contentData(grade, subject) {
                         "ヨーロッパ諸国の主権国家体制と市民革命",
                         "第一次世界大戦とヴェルサイユ体制",
                         "アメリカの繁栄と世界恐慌",
-                        "中国国民革命の進展と日中戦争",
-                        //日本史
+                        "中国国民革命の進展と日中戦争"
+                    ];
+                    break;
+                case "日本史":
+                    return [
                         "旧石器時代～古墳時代",
                         "飛鳥時代",
                         "奈良時代",
@@ -1191,8 +1227,10 @@ function contentData(grade, subject) {
                         "江戸時代",
                         "幕末",
                         "明治時代",
-                        "昭和時代",
-                        //地理
+                        "昭和時代"
+                    ];
+                case "地理":
+                    return [
                         "地球，地理情報と地図",
                         "気候",
                         "日本と世界の環境",
@@ -1208,9 +1246,10 @@ function contentData(grade, subject) {
                         "気候",
                         "地形図と地域調査，地形",
                         "産業",
-                        "交通・通信，貿易",
-                        //【公民】
-                        //倫理
+                        "交通・通信，貿易"
+                    ];
+                case "倫理":
+                    return [
                         "青年期/ギリシャ思想",
                         "キリスト教/イスラーム",
                         "仏教/中国の思想",
@@ -1223,8 +1262,10 @@ function contentData(grade, subject) {
                         "現代の諸課題と倫理",
                         "中国の思想ＩＩ",
                         "鎌倉時代の仏教",
-                        "ドイツ観念論",
-                        //現代社会
+                        "ドイツ観念論"
+                    ];
+                case "現代社会":
+                    return [
                         "私たちの生きる社会／青年期と自己形成",
                         "現代の経済社会①",
                         "現代の経済社会②",
@@ -1264,14 +1305,16 @@ function contentData(grade, subject) {
                         "名詞と冠詞"
                     ];
                     break;
-                case "技術":
+                case "社会と情報":
                     return [
-                        //社会と情報
                         "私たちを取り巻く情報",
                         "アナログからデジタルへ",
                         "情報の表現と伝達",
-                        "インターネットの利用",
-                        //情報の科学
+                        "インターネットの利用"
+                    ];
+                    break;
+                case "情報の科学":
+                    return [
                         "情報とコンピュータ",
                         "ネットワークの仕組みとシステム",
                         "問題解決のためのコンピュータ活用",
@@ -1279,15 +1322,18 @@ function contentData(grade, subject) {
                         "情報技術と社会"
                     ];
                     break;
-                case "家庭":
+                case "家庭基礎":
                     return [
                         //家庭基礎
                         "人の一生と家族・福祉",
                         "食生活の管理と健康",
                         "衣生活の管理と健康",
                         "住生活の管理と健康",
-                        "消費生活と環境",
-                        //家庭総合
+                        "消費生活と環境"
+                    ];
+                    break;
+                case "家庭総合":
+                    return [
                         "自分・家族",
                         "子ども",
                         "多様性",
@@ -1296,8 +1342,11 @@ function contentData(grade, subject) {
                         "経済生活・環境",
                         "災害時の生活",
                         "食生活",
-                        "衣生活",
-                        //生活デザイン
+                        "衣生活"
+                    ];
+                    break;
+                case "生活デザイン":
+                    return [
                         "衣生活デザイン",
                         "住生活デザイン",
                         "コミュニケーション",
@@ -1437,6 +1486,131 @@ function setColor(subject, length, i) {
             g = 211;
             b = 211;
             break;
+        case "化学":
+        case "化学基礎":
+            r = 134;
+            g = 211;
+            b = 83;
+            break;
+        case "家庭基礎":
+        case "家庭総合":
+            r = 211;
+            g = 83;
+            b = 185;
+            break;
+        case "漢文":
+            r = 211;
+            g = 137;
+            b = 83;
+            break;
+        case "現代社会":
+            r = 131;
+            g = 83;
+            b = 211;
+            break;
+        case "現代文":
+            r = 211;
+            g = 176;
+            b = 83;
+            break;
+        case "古文":
+            r = 211;
+            g = 83;
+            b = 83;
+            break;
+        case "公民":
+            r = 83;
+            g = 191;
+            b = 211;
+            break;
+        case "社会と情報":
+            r = 83;
+            g = 92;
+            b = 211;
+            break;
+        case "書道":
+            r = 211;
+            g = 155;
+            b = 83;
+            break;
+        case "情報の科学":
+            r = 83;
+            g = 149;
+            b = 211;
+            break;
+        case "数学１":
+            r = 89;
+            g = 83;
+            b = 211;
+            break;
+        case "数学A":
+            r = 200;
+            g = 211;
+            b = 83;
+            break;
+        case "数学２":
+            r = 83;
+            g = 116;
+            b = 211;
+            break;
+        case "数学B":
+            r = 211;
+            g = 194;
+            b = 83;
+            break;
+        case "数学３":
+            r = 83;
+            g = 161;
+            b = 211;
+            break;
+        case "世界史":
+            r = 211;
+            g = 83;
+            b = 131;
+            break;
+        case "生活デザイン":
+            r = 173;
+            g = 83;
+            b = 211;
+            break;
+        case "生物":
+        case "生物基礎":
+            r = 83;
+            g = 211;
+            b = 131;
+            break;
+        case "地学":
+        case "地学基礎":
+            r = 128;
+            g = 211;
+            b = 83;
+            break;
+        case "地理":
+            r = 164;
+            g = 211;
+            b = 83;
+            break;
+        case "日本史":
+            r = 211
+            g = 83
+            b = 83
+            break;
+        case "物理":
+        case "物理基礎":
+            r = 83;
+            g = 211;
+            b = 125;
+            break;
+        case "倫理":
+            r = 211;
+            g = 107;
+            b = 83;
+            break;
+        case "歴史":
+            r = 83;
+            g = 211;
+            b = 191;
+            break;
     }
 
     return "rgb(" + (r + i * change) + "," + (g + i * change) + "," + (b + i * change) + ")";
@@ -1547,8 +1721,8 @@ function subjectData(grade) {
             $('.subject-modal').find('#国語').removeClass('close');
             $('.subject-modal').find('#数学').removeClass('close');
             $('.subject-modal').find('#理科').removeClass('close');
-            $('.subject-modal').find('#地理').removeClass('close');
             $('.subject-modal').find('#歴史').removeClass('close');
+            $('.subject-modal').find('#公民').removeClass('close');
             $('.subject-modal').find('#英語').removeClass('close');
             $('.subject-modal').find('#技術').removeClass('close');
             $('.subject-modal').find('#家庭').removeClass('close');
@@ -1559,13 +1733,33 @@ function subjectData(grade) {
             $('.subject-modal').find('#書道').removeClass('close');
             break;
         case "高校生":
-            $('.subject-modal').find('#国語').removeClass('close');
-            $('.subject-modal').find('#数学').removeClass('close');
-            $('.subject-modal').find('#理科').removeClass('close');
-            $('.subject-modal').find('#社会').removeClass('close');
+            $('.subject-modal').find('#古文').removeClass('close');
+            $('.subject-modal').find('#漢文').removeClass('close');
+            $('.subject-modal').find('#現代文').removeClass('close');
+            $('.subject-modal').find('#数学１').removeClass('close');
+            $('.subject-modal').find('#数学A').removeClass('close');
+            $('.subject-modal').find('#数学２').removeClass('close');
+            $('.subject-modal').find('#数学B').removeClass('close');
+            $('.subject-modal').find('#数学３').removeClass('close');
+            $('.subject-modal').find('#物理基礎').removeClass('close');
+            $('.subject-modal').find('#物理').removeClass('close');
+            $('.subject-modal').find('#化学基礎').removeClass('close');
+            $('.subject-modal').find('#化学').removeClass('close');
+            $('.subject-modal').find('#生物基礎').removeClass('close');
+            $('.subject-modal').find('#生物').removeClass('close');
+            $('.subject-modal').find('#地学基礎').removeClass('close');
+            $('.subject-modal').find('#科学と人間生活').removeClass('close');
+            $('.subject-modal').find('#世界史').removeClass('close');
+            $('.subject-modal').find('#日本史').removeClass('close');
+            $('.subject-modal').find('#地理').removeClass('close');
+            $('.subject-modal').find('#倫理').removeClass('close');
+            $('.subject-modal').find('#現代社会').removeClass('close');
             $('.subject-modal').find('#英語').removeClass('close');
-            $('.subject-modal').find('#技術').removeClass('close');
-            $('.subject-modal').find('#家庭').removeClass('close');
+            $('.subject-modal').find('#社会と情報').removeClass('close');
+            $('.subject-modal').find('#情報の科学').removeClass('close');
+            $('.subject-modal').find('#家庭基礎').removeClass('close');
+            $('.subject-modal').find('#家庭総合').removeClass('close');
+            $('.subject-modal').find('#生活デザイン').removeClass('close');
             $('.subject-modal').find('#音楽').removeClass('close');
             $('.subject-modal').find('#美術').removeClass('close');
             $('.subject-modal').find('#体育').removeClass('close');
