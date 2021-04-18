@@ -48,7 +48,8 @@ $(document).ready(function(){
                 let template = document.getElementById('template');
                 let clone = template.content.cloneNode(true);
                 clone.querySelector('.icon-text').textContent = content[i];
-                clone.querySelector('.icon-text').style.color = setColor($('#subject').val(), content.length, i);
+                clone.querySelector('.icon').style.color = "white";
+                clone.querySelector('.icon').style.backgroundColor = setColor($('#subject').val(), content.length, i);
                 document.getElementById('icons').appendChild(clone);
             }
         }

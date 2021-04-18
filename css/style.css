@@ -214,13 +214,15 @@ img .close {
 }
 
 .pattern .pattern3 {
-  bottom: -30px;
-  left: 40px;
+  width: 500px;
+  bottom: -70px;
+  left: -60px;
 }
 
 .pattern .pattern4 {
-  bottom: -30px;
-  right: -65px;
+  width: 500px;
+  bottom: -70px;
+  right: -160px;
 }
 
 @media screen and (max-width: 700px) {

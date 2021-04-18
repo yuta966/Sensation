@@ -376,7 +376,7 @@ function contentData(grade, subject) {
                         "公倍数、公約数",
                         "分数の足し算、引き算",
                         "分数の掛け算",
-                        "割合"
+                        "割合"　
                     ];
                     break;
                 case "理科":
@@ -1612,9 +1612,7 @@ function setColor(subject, length, i) {
             b = 191;
             break;
     }
-
     return "rgb(" + (r + i * change) + "," + (g + i * change) + "," + (b + i * change) + ")";
-
 }
 
 function subjectData(grade) {

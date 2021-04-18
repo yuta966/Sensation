@@ -46,7 +46,6 @@ img .close {
     display: none;
 }
 
-
 .open {
     display: block;
     visibility: visible;
@@ -58,6 +57,7 @@ img .close {
     visibility: hidden;
     opacity: 0;
 }
+
 /* top-content */
 .top-content {
     margin-top: 50px;
@@ -203,12 +203,14 @@ img .close {
         right: 30px;
     }
     .pattern3 {
-        bottom: -30px;
-        left: 40px;
+        width: 500px;
+        bottom: -70px;
+        left: -60px;
     }
     .pattern4 {
-        bottom: -30px;
-        right: -65px;
+        width: 500px;
+        bottom: -70px;
+        right: -160px;
     }
 }
 
