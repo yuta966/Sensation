@@ -80,16 +80,32 @@ img .close {
     padding-top: 10px;
 }
 
-.top-content input {
-    margin: 50px auto;
-    width: 80%;
-    max-width: 500px;
-    padding: 15px;
-    border: solid 0px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    border-radius: 24px;
-    font-size: 16px;
-    outline: none;
+.top-content .searchForm {
+    position: relative;
+    margin: 50px 0;
+    height: 40px;
+
+    input {
+        height: 100%;
+        width: 80%;
+        max-width: 700px;
+        padding: 15px;
+        border: solid 0px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        border-radius: 24px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    i {
+        position: absolute;
+        top: 10px;
+        left: 82%;
+        transform: translateX(-82%);
+        -webkit-transform: translateX(-82%);
+        -ms-transform: translateX(-82%);
+    }
+
 }
 
 .btn {
@@ -201,4 +217,41 @@ img .close {
         width: calc(100vw / 4);
         height: calc(100vw / 4);
     }
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../font/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../font/MaterialIcons-Regular.woff) format('woff'),
+      url(../font/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }

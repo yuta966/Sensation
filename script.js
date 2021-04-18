@@ -109,7 +109,7 @@ $(document).ready(function(){
 
     //Goボタン
     $('.goButton').click(function(){
-        $('#keyword').val($('.top-content').find('input').val());
+        $('#keyword').val($('.top-content').find('.searchForm').find('input').val());
         search();
     });
 });
