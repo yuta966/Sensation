@@ -147,8 +147,8 @@ img .close {
       -ms-flex: auto;
           flex: auto;
   position: relative;
-  width: calc(100vw / 7);
-  height: calc(100vw / 7);
+  width: calc(90vw / 6);
+  height: calc(90vw / 6);
   -o-object-fit: cover;
      object-fit: cover;
   padding: 1%;
@@ -170,6 +170,18 @@ img .close {
 
 .content-icon {
   display: inline-block;
+  position: relative !important;
+}
+
+.content-icon .icon-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5px;
+  border: solid 3px #d3d3d4;
+  border-radius: 100%;
 }
 
 .modal .icon:hover {
@@ -212,25 +224,23 @@ img .close {
 
 .pattern .pattern2 {
   top: 0;
-  right: 30px;
+  right: 0;
 }
 
 .pattern .pattern3 {
-  width: 500px;
-  bottom: -70px;
-  left: -60px;
+  bottom: 0;
+  left: 0;
 }
 
 .pattern .pattern4 {
-  width: 500px;
-  bottom: -70px;
-  right: -160px;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 700px) {
   .modal .icon {
-    width: calc(100vw / 4);
-    height: calc(100vw / 4);
+    width: calc(90vw / 3);
+    height: calc(90vw / 3);
   }
 }
 

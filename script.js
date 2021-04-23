@@ -1,6 +1,7 @@
 $(document).ready(function(){
     //次へボタン
     $('.icon').click(function(){
+        console.log("clicked");
         let $gradeModal = $('.grade-modal').hasClass('open');
         let $subjectModal = $('.subject-modal').hasClass('open');
 
@@ -48,8 +49,9 @@ $(document).ready(function(){
                 let template = document.getElementById('template');
                 let clone = template.content.cloneNode(true);
                 clone.querySelector('.icon-text').textContent = content[i];
-                clone.querySelector('.icon').style.color = "white";
-                clone.querySelector('.icon').style.backgroundColor = setColor($('#subject').val(), content.length, i);
+                clone.querySelector('.icon-text').style.color = "white";
+                clone.querySelector('.icon').style.backgroundColor = "rgba(0,0,0,0)";
+                clone.querySelector('.icon-color').style.backgroundColor = setColor($('#subject').val(), content.length, i);
                 document.getElementById('icons').appendChild(clone);
             }
         }
@@ -123,20 +125,20 @@ function search() {
     $content = $('#content').val();
     $keyword = $('#keyword').val();
 
-    //キーワード検索
-    if($keyword && $grade && $subject && $content) {
-        window.location.href = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20-amazon%20' + $keyword + '%20' + $grade + '%20' + $subject +'%20' + $content;
-    }
-    //条件検索
-    else if($keyword) {
-        window.location.href = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20-amazon%20' + $keyword;
-    }
-    else if($grade && $subject && $content) {
-        window.location.href = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20-amazon%20' + $grade + '%20' + $subject +'%20' + $content;
-    }
-    //エラー
-    else {
-        console.log("エラーが発生");
-    }
-}
+    //除外ワード
+    let excludedWords = ["amazon","楽天"];
 
+    let url = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20';
+
+    for(let word of excludedWords) {
+        url += '-' + word + '%20';
+    }
+
+    //キーワード検索
+    if($keyword) { url += $keyword + '%20' }
+    if($grade) { url += $grade + '%20' }
+    if($subject) { url += $subject + '%20' }
+    if($content) { url += $content + '%20' }
+
+    window.open(url);
+}

@@ -75,6 +75,26 @@ function contentData(grade, subject) {
                         "硬筆"
                     ];
                     break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣",
+                        "勤勉努力",
+                        "善悪の判断・勇気",
+                        "正直・明朗",
+                        "礼儀",
+                        "思いやり・親切",
+                        "友情",
+                        "感謝",
+                        "生命尊重",
+                        "自然愛・動物愛護",
+                        "畏敬の念",
+                        "規則尊重・公徳心",
+                        "勤労",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛"
+                    ];
+                    break;
             }
             break;
         case "小学2年生":
@@ -143,6 +163,26 @@ function contentData(grade, subject) {
                         "点画の組み立て",
                         "部分の組み立て",
                         "硬筆"
+                    ];
+                    break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣",
+                        "勤勉努力",
+                        "善悪の判断・勇気",
+                        "正直・明朗",
+                        "礼儀",
+                        "思いやり・親切",
+                        "友情",
+                        "感謝",
+                        "生命尊重",
+                        "自然愛・動物愛護",
+                        "畏敬の念",
+                        "規則尊重・公徳心",
+                        "勤労",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛"
                     ];
                     break;
             }
@@ -246,6 +286,28 @@ function contentData(grade, subject) {
                         "硬筆"
                     ];
                     break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣",
+                        "勤勉・粘り強さ",
+                        "善悪の判断・勇気",
+                        "正直・明朗",
+                        "個性の伸長",
+                        "礼儀",
+                        "思いやり・親切",
+                        "信頼友情",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・動物愛護",
+                        "畏敬の念",
+                        "規則尊重・公徳心",
+                        "勤労",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛",
+                        "愛国心・国際理解"
+                    ];
+                    break;
             }
             break;
         case "小学4年生":
@@ -345,6 +407,28 @@ function contentData(grade, subject) {
                         "点画の組み立て",
                         "部分の組み立て",
                         "硬筆"
+                    ];
+                    break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣",
+                        "勤勉・粘り強さ",
+                        "善悪の判断・勇気",
+                        "正直・明朗",
+                        "個性の伸長",
+                        "礼儀",
+                        "思いやり・親切",
+                        "信頼友情",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・動物愛護",
+                        "畏敬の念",
+                        "規則尊重・公徳心",
+                        "勤労",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛",
+                        "愛国心・国際理解"
                     ];
                     break;
             }
@@ -462,6 +546,32 @@ function contentData(grade, subject) {
                         "硬筆"
                     ];
                     break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣・節度節制",
+                        "希望・勇気・努力",
+                        "自由・自律・責任",
+                        "誠実・明朗",
+                        "真理愛・創意工夫",
+                        "個性の伸長",
+                        "礼儀",
+                        "思いやり・親切",
+                        "信頼友情・男女協力",
+                        "寛容・謙虚",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・環境保全",
+                        "畏敬の念",
+                        "規則尊重・公徳心・権利義務",
+                        "公正公平・正義",
+                        "役割と責任の自覚",
+                        "勤労・奉仕",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛・愛国心",
+                        "国際理解・親善"
+                    ];
+                    break;
             }
             break;
         case "小学6年生":
@@ -575,6 +685,32 @@ function contentData(grade, subject) {
                         "点画の組み立て",
                         "部分の組み立て",
                         "硬筆"
+                    ];
+                    break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣・節度節制",
+                        "希望・勇気・努力",
+                        "自由・自律・責任",
+                        "誠実・明朗",
+                        "真理愛・創意工夫",
+                        "個性の伸長",
+                        "礼儀",
+                        "思いやり・親切",
+                        "信頼友情・男女協力",
+                        "寛容・謙虚",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・環境保全",
+                        "畏敬の念",
+                        "規則尊重・公徳心・権利義務",
+                        "公正公平・正義",
+                        "役割と責任の自覚",
+                        "勤労・奉仕",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛・愛国心",
+                        "国際理解・親善"
                     ];
                     break;
             }
@@ -711,6 +847,34 @@ function contentData(grade, subject) {
                         "硬筆"
                     ];
                     break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣・調和のある生活",
+                        "希望・勇気・強い意志",
+                        "自主自律・誠実・責任",
+                        "真理愛・理想の実現",
+                        "向上心・個性の伸長",
+                        "礼儀",
+                        "人間愛・思いやり",
+                        "信頼友情",
+                        "異性の理解",
+                        "寛容・謙虚",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・畏敬の念",
+                        "弱さの克服・生きる喜び",
+                        "法の順守・権利義務",
+                        "公徳心・夜会連帯",
+                        "公正公平・正義",
+                        "役割と責任の自覚",
+                        "勤労・奉仕・公共の福祉",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛",
+                        "愛国心",
+                        "国際理解・人類愛"
+                    ];
+                    break;
             }
             break;
         case "中学2年生":
@@ -836,6 +1000,34 @@ function contentData(grade, subject) {
                         "点画の組み立て",
                         "部分の組み立て",
                         "硬筆"
+                    ];
+                    break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣・調和のある生活",
+                        "希望・勇気・強い意志",
+                        "自主自律・誠実・責任",
+                        "真理愛・理想の実現",
+                        "向上心・個性の伸長",
+                        "礼儀",
+                        "人間愛・思いやり",
+                        "信頼友情",
+                        "異性の理解",
+                        "寛容・謙虚",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・畏敬の念",
+                        "弱さの克服・生きる喜び",
+                        "法の順守・権利義務",
+                        "公徳心・夜会連帯",
+                        "公正公平・正義",
+                        "役割と責任の自覚",
+                        "勤労・奉仕・公共の福祉",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛",
+                        "愛国心",
+                        "国際理解・人類愛"
                     ];
                     break;
             }
@@ -969,6 +1161,34 @@ function contentData(grade, subject) {
                         "点画の組み立て",
                         "部分の組み立て",
                         "硬筆"
+                    ];
+                    break;
+                case "道徳":
+                    return [
+                        "基本的な生活習慣・調和のある生活",
+                        "希望・勇気・強い意志",
+                        "自主自律・誠実・責任",
+                        "真理愛・理想の実現",
+                        "向上心・個性の伸長",
+                        "礼儀",
+                        "人間愛・思いやり",
+                        "信頼友情",
+                        "異性の理解",
+                        "寛容・謙虚",
+                        "尊敬・感謝",
+                        "生命尊重",
+                        "自然愛・畏敬の念",
+                        "弱さの克服・生きる喜び",
+                        "法の順守・権利義務",
+                        "公徳心・夜会連帯",
+                        "公正公平・正義",
+                        "役割と責任の自覚",
+                        "勤労・奉仕・公共の福祉",
+                        "家族愛",
+                        "愛校心",
+                        "郷土愛",
+                        "愛国心",
+                        "国際理解・人類愛"
                     ];
                     break;
             }
@@ -1625,6 +1845,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#図工').removeClass('close');
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "小学2年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1634,6 +1855,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#図工').removeClass('close');
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "小学3年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1646,6 +1868,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "小学4年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1658,6 +1881,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "小学5年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1671,6 +1895,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "小学6年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1684,6 +1909,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "中学1年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1699,6 +1925,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "中学2年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1714,6 +1941,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "中学3年生":
             $('.subject-modal').find('#国語').removeClass('close');
@@ -1729,6 +1957,7 @@ function subjectData(grade) {
             $('.subject-modal').find('#体育').removeClass('close');
             $('.subject-modal').find('#保健').removeClass('close');
             $('.subject-modal').find('#書道').removeClass('close');
+            $('.subject-modal').find('#道徳').removeClass('close');
             break;
         case "高校生":
             $('.subject-modal').find('#古文').removeClass('close');
