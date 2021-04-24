@@ -126,19 +126,24 @@ function search() {
     $keyword = $('#keyword').val();
 
     //除外ワード
-    let excludedWords = ["amazon","楽天"];
+    let excludedWords = ["amazon","楽天","書き方", "テンプレート", "様式", "アマゾン", "rakuten", "NAVERまとめ", "まとめ", "2ch", "5ch", "転載", "アンテナ", "Q&A", "知恵袋", "yahoo", "yahoo知恵袋", "価格ドットコム", "旅行", "ホテル", "航空券予約", "航空", "素材", "Youtube", "ユーチューブ", "ニコニコ動画", "niconico", "hulu", "twitter", "ツイッター", "Instagram", "インスタグラム"];
 
     let url = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20+filetype:pdf%20';
 
-    for(let word of excludedWords) {
-        url += '-' + word + '%20';
-    }
-
     //キーワード検索
-    if($keyword) { url += '"' + $keyword + '"' + '%20' }
+    /* if($keyword) { url += '"' + $keyword + '"' + '%20' }
     if($grade) { url += '"' + $grade + '"' + '%20' }
     if($subject) { url += '"' + $subject + '"' + '%20' }
-    if($content) { url += '"' + $content + '"'}
+    if($content) { url += '"' + $content + '"' + '%20' } */
+
+    if($keyword) { url +=  $keyword + '%20' }
+    if($grade) { url += $grade + '%20' }
+    if($subject) { url += $subject + '%20' }
+    if($content) { url += $content + '%20' }
+
+    for(let word of excludedWords) {
+        url += '-site:' + "*" + word + "*" + '%20';
+    }
 
     window.open(url);
 }
