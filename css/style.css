@@ -110,10 +110,11 @@ img .close {
 }
 
 .btn {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #8b96fd;
+  color: azure;
   height: 40px;
-  margin: 10px;
+  width: 300px;
+  margin: auto;
   border-radius: 5px;
   line-height: 40px;
 }

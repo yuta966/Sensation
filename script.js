@@ -128,17 +128,17 @@ function search() {
     //除外ワード
     let excludedWords = ["amazon","楽天"];
 
-    let url = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20';
+    let url = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20+filetype:pdf%20';
 
     for(let word of excludedWords) {
         url += '-' + word + '%20';
     }
 
     //キーワード検索
-    if($keyword) { url += $keyword + '%20' }
-    if($grade) { url += $grade + '%20' }
-    if($subject) { url += $subject + '%20' }
-    if($content) { url += $content + '%20' }
+    if($keyword) { url += '"' + $keyword + '"' + '%20' }
+    if($grade) { url += '"' + $grade + '"' + '%20' }
+    if($subject) { url += '"' + $subject + '"' + '%20' }
+    if($content) { url += '"' + $content + '"'}
 
     window.open(url);
 }
