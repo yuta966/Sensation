@@ -131,15 +131,15 @@ function search() {
     let url = 'http://www.google.co.jp/search?q=%20&hq=学習指導案%20+filetype:pdf%20';
 
     //キーワード検索
-    /* if($keyword) { url += '"' + $keyword + '"' + '%20' }
+    if($keyword) { url += $keyword + '%20' }
     if($grade) { url += '"' + $grade + '"' + '%20' }
     if($subject) { url += '"' + $subject + '"' + '%20' }
-    if($content) { url += '"' + $content + '"' + '%20' } */
+    if($content) { url += '"' + $content + '"' + '%20' }
 
-    if($keyword) { url +=  $keyword + '%20' }
+    /* if($keyword) { url +=  $keyword + '%20' }
     if($grade) { url += $grade + '%20' }
     if($subject) { url += $subject + '%20' }
-    if($content) { url += $content + '%20' }
+    if($content) { url += $content + '%20' } */
 
     for(let word of excludedWords) {
         url += '-site:' + "*" + word + "*" + '%20';
